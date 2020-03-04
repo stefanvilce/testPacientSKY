@@ -14,8 +14,6 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Teste vere!"); // asta trebuie sa dispara de aici pentru ca nu are ce cauta!!!!
-		
 		try {
 			ImportJsonFile importJsonFile = new ImportJsonFile();			
 			List<Appointments> list = importJsonFile.takeDataFromJSON("Danny boy.json");
