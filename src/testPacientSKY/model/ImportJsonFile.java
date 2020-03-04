@@ -39,12 +39,12 @@ public class ImportJsonFile {
 	    	 appointment.setCalendar_id(appObj.getString("calendar_id"));
 	    	 appointment.setStart(appObj.getString("start"));
 	    	 appointment.setEnd(appObj.getString("end"));
-	    	 appointment.setPatient_comment(appObj.getString("patient_comment"));
-	    	 appointment.setNote(appObj.getString("note"));
+	    	 appointment.setPatient_comment(appObj.get("patient_comment").toString());
+	    	 appointment.setNote(appObj.get("note").toString());
 	    	 appointment.setTime_slot_type_id(appObj.getString("time_slot_type_id"));
-	    	 appointment.setType_id(appObj.getString("type_id"));
+	    	 appointment.setType_id(appObj.get("type_id").toString());
 	    	 appointment.setState(appObj.getInt("state"));
-	    	 appointment.setOut_of_office_location(appObj.getString("out_of_office_localtion"));
+	    	 appointment.setOut_of_office_location(appObj.getString("out_of_office_location"));
 	    	 appointment.setOut_of_office(appObj.getBoolean("out_of_office"));
 	    	 appointment.setCompleted(appObj.getBoolean("completed"));
 	    	 appointment.setIs_scheduled(appObj.getBoolean("is_scheduled"));

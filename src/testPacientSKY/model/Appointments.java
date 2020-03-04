@@ -50,8 +50,11 @@ public class Appointments {
 	public String getPatient_comment() {
 		return patient_comment;
 	}
+	public void setPatient_comment() {
+		this.patient_comment = null;		
+	}
 	public void setPatient_comment(String patient_comment) {
-		this.patient_comment = patient_comment;
+		this.patient_comment = patient_comment;		
 	}
 	public String getNote() {
 		return note;
